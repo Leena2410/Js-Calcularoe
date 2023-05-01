@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>الة حاسبة</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="get">
+            <div id="culculater">
+                <div id="top">
+                    <div id="topbuttons">
+                        <div id="button">
+                        <input type="button"  id="history" class="topbutton" value="History" onclick="historyFun()">
+                        <input type="button" id="Scientific" class="topbutton" value="Scientific" onclick="window.location.href='../scientific/main.html'">
+                    </div>
+                    </div>
+                    <div id="result">
+                        <p id="operations_rasult">0</p>
+                        <p id="operations"></p>
+                    </div>
+                </div>
+                <div id="style">
+                    <div id="history-div">
+                        <h1>History</h1>
+                        <ul id="history-ul">
+
+                        </ul>
+                    </div>
+                    
+                    <div id="buttons_div">
+                    <div>
+                        <input type="reset" class="Cbuttons" value="AC" onclick="ac()">
+                        <input type="button" value="c" class="Cbuttons" onclick="Cbutton()">
+                        <input type="button" class="extrabuttons" value="+/-" name="minus" onclick="extraclick(this.form.minus.value)">
+                        <input type="button" class="extrabuttons" value="%" name="persent" onclick="extraclick(this.form.persent.value)">
+                        <input type="button" class="operatinsbutton" value="/" name="sub" onclick="operclick(this.form.sub.value)">
+                    </div>
+                    <div>
+                        <input type="button" name="num7" class="num" value="7" onclick="numclick(this.form.num7.value)">
+                        <input type="button" name="num8" class="num" value="8" onclick="numclick(this.form.num8.value)">
+                        <input type="button" name="num9" class="num" value="9" onclick="numclick(this.form.num9.value)">
+                        <input type="button" class="operatinsbutton" value="×" name="mp" onclick="operclick(this.form.mp.value)">
+                    </div>
+                    <div>
+                        <input type="button" name="num4" class="num" value="4" onclick="numclick(this.form.num4.value)">
+                        <input type="button" name="num5" class="num" value="5" onclick="numclick(this.form.num5.value)">
+                        <input type="button" name="num6" class="num" value="6" onclick="numclick(this.form.num6.value)">
+                        <input type="button" class="operatinsbutton" value="+" name="sum" onclick="operclick(this.form.sum.value)">
+                    </div>
+                    <div>
+                        <input type="button" name="num1" class="num" value="1" onclick="numclick(this.form.num1.value)">
+                        <input type="button" name="num2" class="num" value="2" onclick="numclick(this.form.num2.value)">
+                        <input type="button" name="num3" class="num" value="3" onclick="numclick(this.form.num3.value)">
+                        <input type="button" class="operatinsbutton" value="-" name="div" onclick="operclick(this.form.div.value)">
+                    </div>
+                    <div>
+                        <input type="button" name="num0" id="zero" value="0" onclick="numclick(this.form.num0.value)">
+                        <input type="button" name="point" class="num" value="." name="point" onclick="extraclick(this.form.point.value)">
+                        <input type="button" id="equal" value="=" onclick="operationFirst()">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="culjs.js"></script>
+    </body>
+</html>

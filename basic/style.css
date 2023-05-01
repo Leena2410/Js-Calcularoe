@@ -1,0 +1,180 @@
+/*
+    background color ( #018EFF ) 
+    num color ( #EEEEEE )
+    operatins color ( #00B4FF )
+    buttons div backgroundcolor( #F8F8F8 )
+    result color ( #C1E7F9 )
+    buttons text color ( #828282 )
+*/
+/* basics */
+    body{
+        width: 100%;
+        background-color: black;
+    }
+    #culculater{
+        width: 25em;
+        height: 43em;
+        background-color: white;
+        overflow: hidden;
+        border-radius: 1.5em;
+        margin: 2em;
+        float: left;
+    }
+    #top{
+        height: 35%;
+        margin-bottom: -5%;
+        background-image: linear-gradient(#018EFF,#00b4ff)
+    }
+    #topbuttons{
+        height: 30%;
+    }
+    #result{
+        height: 70%;
+    }
+    #buttons_div{
+        background: #F8F8F8;
+        position: absolute;
+        z-index: 2;
+        width: 23em;
+        margin-left: 1em;
+        margin-right: 1em;
+        float: right ;
+        border-radius: 2em;
+        text-align: center;
+    }
+    #style{
+        height: 29.25em ;
+        background-image: linear-gradient(#00b4ff,#f8f8f8);
+    }
+/* end basics */
+/* topbuttons */
+#topbuttons #button{
+    margin-left: .5em;
+}
+#history{
+    float: left;
+}
+#Scientific{
+    float: right;
+}
+.topbutton{
+    text-align: center;
+    margin: 1em;
+    height: 2em;
+    width: 7em;
+    background-color: #018EFF;
+    border: #F8F8F8 solid 1px;
+    border-radius: 1em;
+    color: #F8F8F8;
+}
+.topbutton:hover{
+    background-color: #F8F8F8;
+    color: #018EFF;
+}
+/* end topbuttons */
+/* rasult area style */
+#operations_rasult{
+    font-size: 3.2em;
+    text-align: right;
+    margin: 1em 1.5em .2em 0em;
+    color: #EEEEEE;
+}
+#operations{
+    font-size: 1em;
+    text-align: right;
+    margin: 0em 4em .5em 0em;
+    color: #C1E7F9;
+}
+/* end rasult area style */
+/* buttons bar style */
+#buttons_div div{
+    width: 100%;
+    margin-top: 1em;
+}
+#buttons_div div:first-child{
+    margin-top: 1.2em;
+}
+#buttons_div div input:not(.operatinsbutton):not(#equal):not(#zero):not(.Cbuttons){
+    width: 4em;
+    height: 4em ;
+    margin: .2em;
+    font-size: 1em;
+    border-radius: 4em;
+    border: #EEEEEE solid 1px;
+    background-color: #EEEEEE ;
+    color: #828282;
+}
+#buttons_div div input:not(.operatinsbutton):not(#equal):not(#zero):hover{
+    background-color: #e9e8e8;
+}
+.Cbuttons{
+    width: 2em;
+    height: 4em;
+    margin: .2em;
+    border: #828282 solid .4px;
+    border-radius: 4em;
+    font-size: 1em;
+    background-color: #EEEEEE ;
+    color: #828282;
+}
+/* operatins buttons style */
+    .operatinsbutton{
+        background-color: #00B4FF;
+        border: none;
+        width: 3.6em;
+        height: 3.6em ;
+        margin: .1em;
+        font-size: 1.2em;
+        border-radius: 4em;
+        color: #C1E7F9 ;
+    }
+    .operatinsbutton:hover{
+        background-color: #018EFF;
+    }
+/* end operatins buttons style */
+/* zero button style */
+#zero{
+    height: 4em ;
+    width: 8.8em;
+    border: none ;
+    border-radius: 4em;
+    font-size: 1em;
+    color: #828282;
+    background-color: #EEEEEE;
+}
+#zero:hover{
+    background-color: #e9e8e8;
+}
+/* end zero button style */
+/* equal button style */
+#equal{
+    background-color: #F8F8F8;
+    color: #00B4FF;
+    border: #00B4FF 1px solid;
+    width: 4em;
+    height: 4em ;
+    margin: .2em;
+    font-size: 1em;
+    border-radius: 4em;
+}
+#equal:hover{
+    color: #C1E7F9;
+    background-color: #00B4FF;
+}
+/* end equal button style */
+/* end buttons bar style */
+
+
+/* history */
+#history-div{
+    text-align: center;
+    color: #828282;
+    display: none;
+    overflow-y: scroll;
+    height:29.25em ;
+}
+ul#history-ul li{
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+/* end history */

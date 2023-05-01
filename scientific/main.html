@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf">
+        <title>scientific culculater</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="cul">
+            <form action="#">
+                <div id="top_back">
+                    <div id="top">
+                        <div id="topbutton">
+                            <input type="button" id="history" class="topbutton" value="History" onclick="historyFun()">
+                            <input type="button" id="basic" class="topbutton" value="Basic" onclick="window.location.href='../basic/cul.html'">
+                        </div>
+                    </div>
+                    <div id="result">
+                        <p id="operationsresult"></p>
+                        <p id="operations"></p>
+                    </div>
+                </div>
+                <div id="backgroundcolor">
+                    <div id="buttons_bar">
+                        <input type="button" value="shift" id="shift-button">
+                        <div class="buttons">
+                            <input type="button" class="ex" value="AC" onclick="ac()">
+                            <input type="button" class="ex" value="C" onclick="Cbutton()">
+                            <input type="button" value="+/-" name="minus" onclick="extraclick(this.form.minus.value); updateFun()">
+                            <input type="button" value="%" name="per" onclick="extraclick(this.form.per.value); updateFun()">
+                            <input type="button" class="operation_button" type="button" value="/" name="div" onclick="operclick(this.form.div.value); updateFun()">
+                            <div class="scien_buttons">
+                                <input type="button" type="button" value="(" class="scien" value="(" name="arch1" onclick="archFun(this.form.arch1.value); updateFun()">
+                                <input type="button" value=")" class="scien" value=")" name="arch2" onclick="archFun(this.form.arch2.value); updateFun()">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="button" class="num" value="7" name="num7" onclick="numclick(this.form.num7.value); updateFun()">
+                            <input type="button" class="num" value="8" name="num8" onclick="numclick(this.form.num8.value); updateFun()">
+                            <input type="button" class="num" value="9" name="num9" onclick="numclick(this.form.num9.value); updateFun()">
+                            <input type="button" class="operation_button" value="×" name="mp" onclick="operclick(this.form.mp.value); updateFun()">
+                            <div class="scien_buttons">
+                                <input type="button" class="scien"class="trangle" value="sin/sine-1" name="sin" onclick="mathFun(this.form.sin.value); updateFun()">
+                                <input type="button" class="scien" value="power z" name="power" onclick="mathFun(this.form.sin.value); updateFun()">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="button" class="num" value="4" name="num4" onclick="numclick(this.form.num4.value); updateFun()">
+                            <input type="button" class="num" value="5" name="num5" onclick="numclick(this.form.num5.value); updateFun()">
+                            <input type="button" class="num" value="6" name="num6" onclick="numclick(this.form.num6.value); updateFun()">
+                            <input type="button" class="operation_button" value="+" name="sum" onclick="operclick(this.form.sum.value); updateFun()">
+                            <div class="scien_buttons">
+                                <input type="button" class="scien"class="trangle" value="cos/cos-1"  name="cos" onclick="mathFun(this.form.cos.value); updateFun()">
+                                <input type="button" class="scien" value="x√y"  name="s" onclick="mathFun(this.form.s.value); updateFun()">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="button" class="num" value="1" name="num1" onclick="numclick(this.form.num1.value); updateFun()">
+                            <input type="button" class="num" value="2" name="num2" onclick="numclick(this.form.num2.value); updateFun()">
+                            <input type="button" class="num" value="3" name="num3" onclick="numclick(this.form.num3.value); updateFun()">
+                            <input type="button" class="operation_button" value="-" name="sub" onclick="operclick(this.form.sub.value); updateFun()">
+                            <div class="scien_buttons">
+                                <input type="button" class="scien"class="trangle" value="tan/tan-1"  name="tan" onclick="mathFun(this.form.tan.value); updateFun()">
+                                <input type="button" class="scien" value="×10*"  name="tenpower" onclick="mathFun(this.form.tenpower.value); updateFun()">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="button" id="zero" value="0" name="num0" onclick="numclick(this.form.num0.value); updateFun()">
+                            <input type="button" class="num" value="." name="point" onclick="extraclick(this.form.point.value); updateFun()">
+                            <input type="button" id="equal" value="=" onclick="operationFirst()">
+                            <div class="scien_buttons">
+                                <input type="button" class="scien" value="logx(y)" name="logb" onclick="mathFun(this.form.logb.value); updateFun()">
+                                <input type="button" class="scien" value="Abs"  name="ads" onclick="mathFun(this.form.abs.value); updateFun()">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="history-div">
+                        <h1>History</h1>
+                        <ul id="history-ul">
+
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="culjs.js"></script>
+    </body>
+</html>
